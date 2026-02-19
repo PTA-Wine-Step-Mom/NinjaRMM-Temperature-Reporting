@@ -1,0 +1,50 @@
+# Logs
+*.log
+*.log.*
+
+# Temporary files
+*.tmp
+*.temp
+*~
+.DS_Store
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+
+# Windows specific
+Thumbs.db
+desktop.ini
+
+# PowerShell
+*.psm1.bak
+
+# Test results
+TestResults/
+*.trx
+
+# Dependencies (should be installed, not committed)
+LibreHardwareMonitorLib.dll
+LibreHardwareMonitor*.zip
+
+# Local configuration (if we add any)
+.env
+*.local
+
+# NinjaRMM agent data (if testing locally)
+ninjarmm-cli
+ninjarmm-cli.exe
+
+# Build artifacts
+dist/
+build/
+*.pyc
+__pycache__/
+
+# OS specific
+.Spotlight-V100
+.Trashes
+ehthumbs.db
