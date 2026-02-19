@@ -300,7 +300,7 @@ Change the default value in each script:
 ENABLE_REMEDIATION="${ENABLE_REMEDIATION:-false}"  # Changed from true
 ```
 
-⚠️ **Note**: Disabling remediation means you'll still get CRITICAL alerts, but no processes will be automatically terminated. Technicians must respond manually.
+**Note**: Disabling remediation means you'll still get CRITICAL alerts, but no processes will be automatically terminated. Technicians must respond manually.
 
 ---
 
@@ -394,7 +394,7 @@ Use NinjaRMM reporting to:
 
 ## Best Practices
 
-✅ **DO:**
+**DO:**
 - Review remediation actions weekly to identify problem applications
 - Add mission-critical applications to the exclusion list
 - Investigate why processes are consuming excessive CPU
@@ -402,7 +402,7 @@ Use NinjaRMM reporting to:
 - Test remediation behavior in a lab environment before deployment
 - Document any changes to the exclusion list
 
-❌ **DON'T:**
+**DON'T:**
 - Disable remediation without understanding the risks
 - Remove system processes from the exclusion list
 - Ignore frequent remediation events (they indicate a problem)

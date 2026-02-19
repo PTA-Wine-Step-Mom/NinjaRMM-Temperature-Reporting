@@ -6,7 +6,7 @@ This guide provides step-by-step instructions for creating the required custom f
 
 The temperature monitoring scripts write data to **7 custom fields** that must be created at the **Device level** before deploying the scripts.
 
-⚠️ **Important**: Field names are case-sensitive and must match exactly as shown below.
+**Important**: Field names are case-sensitive and must match exactly as shown below.
 
 ## Required Custom Fields
 
@@ -40,7 +40,7 @@ The temperature monitoring scripts write data to **7 custom fields** that must b
 - **Required**: No
 - **Visible in Device Details**: Yes
 
-**Screenshot Placeholder**: `[Screenshot: Creating cpuTemperatureCelsius field]`
+ 
 
 Click **Save**.
 
@@ -56,7 +56,7 @@ Click **Save**.
 - **Required**: No
 - **Visible in Device Details**: Yes
 
-**Screenshot Placeholder**: `[Screenshot: Creating gpuTemperatureCelsius field]`
+ 
 
 Click **Save**.
 
@@ -72,7 +72,7 @@ Click **Save**.
 - **Required**: No
 - **Visible in Device Details**: Yes
 
-**Screenshot Placeholder**: `[Screenshot: Creating temperatureStatus field]`
+ 
 
 Click **Save**.
 
@@ -87,7 +87,7 @@ Click **Save**.
 - **Required**: No
 - **Visible in Device Details**: Yes
 
-**Screenshot Placeholder**: `[Screenshot: Creating lastTemperatureCheck field]`
+ 
 
 Click **Save**.
 
@@ -104,7 +104,7 @@ Click **Save**.
 - **Visible in Device Details**: Yes
 - **Searchable**: Yes (recommended)
 
-**Screenshot Placeholder**: `[Screenshot: Creating temperatureAlertDetail field]`
+ 
 
 Click **Save**.
 
@@ -120,7 +120,7 @@ Click **Save**.
 - **Required**: No
 - **Visible in Device Details**: Yes
 
-**Screenshot Placeholder**: `[Screenshot: Creating cpuTemperatureHistory field]`
+ 
 
 Click **Save**.
 
@@ -136,7 +136,7 @@ Click **Save**.
 - **Required**: No
 - **Visible in Device Details**: Yes
 
-**Screenshot Placeholder**: `[Screenshot: Creating remediationActionTaken field]`
+ 
 
 Click **Save**.
 
@@ -149,7 +149,7 @@ After creating all 7 fields, verify your setup:
 3. Check that all field names match exactly (case-sensitive)
 4. Verify all fields have **Device** scope
 
-**Screenshot Placeholder**: `[Screenshot: List of all 7 custom fields]`
+ 
 
 ## Creating a Dashboard Widget (Optional)
 
@@ -168,7 +168,7 @@ To visualize temperature data across all devices:
    - Filter by `temperatureStatus` = "WARNING" or "CRITICAL"
 6. Save widget
 
-**Screenshot Placeholder**: `[Screenshot: Temperature monitoring dashboard widget]`
+ 
 
 ## Field Name Reference
 
@@ -231,10 +231,10 @@ ninjarmm-cli set remediationActionTaken "Killed process: chrome (PID: 12345)"
 
 After completing custom field setup:
 
-1. ✅ Install platform dependencies: See installation scripts in `scripts/` directory
-2. ✅ Test scripts manually: Run with debug mode enabled
-3. ✅ Configure NinjaRMM policies: See [DEPLOYMENT.md](DEPLOYMENT.md)
-4. ✅ Set up condition-based alerts: See [DEPLOYMENT.md](DEPLOYMENT.md)
+1. Install platform dependencies: See installation scripts in `scripts/` directory
+2. Test scripts manually: Run with debug mode enabled
+3. Configure NinjaRMM policies: See [DEPLOYMENT.md](DEPLOYMENT.md)
+4. Set up condition-based alerts: See [DEPLOYMENT.md](DEPLOYMENT.md)
 
 ---
 

@@ -1,21 +1,21 @@
 # NinjaRMM Temperature Monitoring Extension
 
-🌡️ **Cross-platform temperature monitoring for NinjaRMM with automated alerting and remediation**
+Cross-platform temperature monitoring for NinjaRMM with automated alerting and remediation.
 
-[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-blue)]()
-[![License](https://img.shields.io/badge/license-MIT-green)]()
-[![Version](https://img.shields.io/badge/version-1.0.0-orange)]()
+**Platform Support:** Windows, macOS, Linux  
+**License:** MIT  
+**Version:** 1.0.0
 
 ## Overview
 
 This repository provides a comprehensive temperature monitoring solution for NinjaRMM that:
 
-- ✅ **Monitors** CPU and GPU temperatures across Windows, macOS, and Linux
-- ✅ **Alerts** on WARNING and CRITICAL thresholds via NinjaRMM conditions
-- ✅ **Remediates** by automatically terminating high-CPU processes on critical overheating
-- ✅ **Protects** system-critical processes via configurable exclusion lists
-- ✅ **Logs** all actions with automatic log rotation
-- ✅ **Integrates** seamlessly with NinjaRMM custom fields and dashboard
+- Monitors CPU and GPU temperatures across Windows, macOS, and Linux
+- Alerts on WARNING and CRITICAL thresholds via NinjaRMM conditions
+- Remediates by automatically terminating high-CPU processes on critical overheating
+- Protects system-critical processes via configurable exclusion lists
+- Logs all actions with automatic log rotation
+- Integrates with NinjaRMM custom fields and dashboard
 
 ## Quick Start
 
@@ -64,12 +64,12 @@ On CRITICAL threshold breach:
 
 ## Documentation
 
-- 📘 [Project Overview & Quick Start](docs/README.md)
-- ⚙️ [Custom Fields Setup Guide](docs/CUSTOM_FIELDS_SETUP.md)
-- 🌡️ [Threshold Configuration](docs/THRESHOLDS.md)
-- 🚨 [Remediation Behavior](docs/REMEDIATION.md)
-- 🚀 [NinjaRMM Deployment](docs/DEPLOYMENT.md)
-- 📝 [Changelog](CHANGELOG.md)
+- [Project Overview & Quick Start](docs/README.md)
+- [Custom Fields Setup Guide](docs/CUSTOM_FIELDS_SETUP.md)
+- [Threshold Configuration](docs/THRESHOLDS.md)
+- [Remediation Behavior](docs/REMEDIATION.md)
+- [NinjaRMM Deployment](docs/DEPLOYMENT.md)
+- [Changelog](CHANGELOG.md)
 
 ## Platform Support
 
@@ -168,7 +168,7 @@ ENABLE_REMEDIATION=false sudo ./get_temperature.sh
 
 ## Contributing
 
-Contributions welcome! Please:
+Contributions are welcome. Please:
 1. Follow existing code style and standards
 2. Test on all supported platforms
 3. Update documentation
@@ -180,16 +180,16 @@ MIT License - see [LICENSE](LICENSE) file for details.
 
 ## Disclaimer
 
-⚠️ This software automatically terminates processes on critical temperature events. While safeguards are in place, use at your own risk. Test thoroughly in non-production environments before deployment.
+WARNING: This software automatically terminates processes on critical temperature events. While safeguards are in place, use at your own risk. Test thoroughly in non-production environments before deployment.
 
 This project is not affiliated with, endorsed by, or sponsored by NinjaRMM, LLC.
 
 ## Support
 
-- 📚 **Documentation**: See [docs/](docs/) directory
-- 🐛 **Issues**: Use GitHub Issues for bug reports
-- 💡 **Feature Requests**: Submit via GitHub Issues
-- 🤝 **Community**: Share your configurations and experiences
+- **Documentation**: See [docs/](docs/) directory
+- **Issues**: Use GitHub Issues for bug reports
+- **Feature Requests**: Submit via GitHub Issues
+- **Community**: Share your configurations and experiences
 
 ---
 

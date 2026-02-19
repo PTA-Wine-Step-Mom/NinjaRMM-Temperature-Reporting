@@ -6,11 +6,11 @@ This comprehensive guide walks you through deploying the temperature monitoring 
 
 Before deploying, ensure:
 
-- ✅ Custom fields are created (see [CUSTOM_FIELDS_SETUP.md](CUSTOM_FIELDS_SETUP.md))
-- ✅ Dependencies are installed on test devices
-- ✅ Scripts have been tested manually with `-Debug` flag
-- ✅ Threshold values are configured appropriately
-- ✅ You have NinjaRMM administrator access
+- Custom fields are created (see [CUSTOM_FIELDS_SETUP.md](CUSTOM_FIELDS_SETUP.md))
+- Dependencies are installed on test devices
+- Scripts have been tested manually with `-Debug` flag
+- Threshold values are configured appropriately
+- You have NinjaRMM administrator access
 
 ## Deployment Overview
 
@@ -47,7 +47,7 @@ Each policy will:
 
 5. **Script Settings**:
    - **Timeout**: `300 seconds` (5 minutes)
-   - **Enabled**: ✅ Yes
+   - **Enabled**: Yes
    - **Parameters**: (Optional) Add parameter for disabling remediation:
      ```
      -EnableRemediation $true
@@ -59,7 +59,7 @@ Each policy will:
 
 7. Click **Save**
 
-**Screenshot Placeholder**: `[Screenshot: Windows script configuration]`
+ 
 
 ---
 
@@ -80,7 +80,7 @@ Each policy will:
 
 5. **Script Settings**:
    - **Timeout**: `300 seconds` (5 minutes)
-   - **Enabled**: ✅ Yes
+   - **Enabled**: Yes
    - **Run As**: `root` (required for powermetrics access)
    - **Environment Variables**: (Optional)
      ```
@@ -93,7 +93,7 @@ Each policy will:
 
 7. Click **Save**
 
-**Screenshot Placeholder**: `[Screenshot: macOS script configuration]`
+ 
 
 ---
 
@@ -114,7 +114,7 @@ Each policy will:
 
 5. **Script Settings**:
    - **Timeout**: `300 seconds` (5 minutes)
-   - **Enabled**: ✅ Yes
+   - **Enabled**: Yes
    - **Run As**: `root` (required for sensor access)
    - **Environment Variables**: (Optional)
      ```
@@ -127,7 +127,7 @@ Each policy will:
 
 7. Click **Save**
 
-**Screenshot Placeholder**: `[Screenshot: Linux script configuration]`
+ 
 
 ---
 
@@ -142,7 +142,7 @@ Each policy will:
    **General:**
    - **Name**: `Temperature Monitoring - Windows`
    - **Description**: `Runs temperature monitoring every 15 minutes on Windows devices`
-   - **Status**: ✅ Active
+   - **Status**: Active
    
    **Conditions:**
    - Click **+ Add Condition**
@@ -157,7 +157,7 @@ Each policy will:
    - **Schedule**: `Recurring`
    - **Frequency**: `Every 15 minutes`
    - **Run As**: `System` (automatic on Windows)
-   - **Enabled**: ✅ Yes
+   - **Enabled**: Yes
 
 5. **Target Devices**:
    - **Apply To**: 
@@ -166,7 +166,7 @@ Each policy will:
 
 6. Click **Save Policy**
 
-**Screenshot Placeholder**: `[Screenshot: Windows automation policy]`
+ 
 
 ---
 
@@ -179,7 +179,7 @@ Each policy will:
    **General:**
    - **Name**: `Temperature Monitoring - macOS`
    - **Description**: `Runs temperature monitoring every 15 minutes on macOS devices`
-   - **Status**: ✅ Active
+   - **Status**: Active
    
    **Conditions:**
    - Click **+ Add Condition**
@@ -194,14 +194,14 @@ Each policy will:
    - **Schedule**: `Recurring`
    - **Frequency**: `Every 15 minutes`
    - **Run As**: `root` (automatic on Mac)
-   - **Enabled**: ✅ Yes
+   - **Enabled**: Yes
 
 5. **Target Devices**:
    - **Apply To**: All Mac devices or specific groups
 
 6. Click **Save Policy**
 
-**Screenshot Placeholder**: `[Screenshot: macOS automation policy]`
+ 
 
 ---
 
@@ -214,7 +214,7 @@ Each policy will:
    **General:**
    - **Name**: `Temperature Monitoring - Linux`
    - **Description**: `Runs temperature monitoring every 15 minutes on Linux devices`
-   - **Status**: ✅ Active
+   - **Status**: Active
    
    **Conditions:**
    - Click **+ Add Condition**
@@ -229,14 +229,14 @@ Each policy will:
    - **Schedule**: `Recurring`
    - **Frequency**: `Every 15 minutes`
    - **Run As**: `root` (automatic on Linux)
-   - **Enabled**: ✅ Yes
+   - **Enabled**: Yes
 
 5. **Target Devices**:
    - **Apply To**: All Linux devices or specific groups
 
 6. Click **Save Policy**
 
-**Screenshot Placeholder**: `[Screenshot: Linux automation policy]`
+ 
 
 ---
 
@@ -262,9 +262,9 @@ Conditions allow NinjaRMM to trigger alerts when script exit codes indicate WARN
    - **Duration**: `Immediately` (trigger on first occurrence)
 
 4. **Actions** (optional):
-   - **Send Email**: ✅ Enable if desired
+   - **Send Email**: Enable if desired
    - **Create Ticket**: ⬜ Usually not needed for WARNING
-   - **Notification**: ✅ Send notification to technician dashboard
+   - **Notification**: Send notification to technician dashboard
 
 5. **Target**: Apply to same devices as the automation policy
 
@@ -292,10 +292,10 @@ Conditions allow NinjaRMM to trigger alerts when script exit codes indicate WARN
    - **Duration**: `Immediately`
 
 4. **Actions**:
-   - **Send Email**: ✅ Enable (send to senior technicians)
-   - **Create Ticket**: ✅ Consider enabling for automatic ticket creation
-   - **Notification**: ✅ High-priority notification
-   - **SMS/Push**: ✅ Consider for after-hours alerts
+   - **Send Email**: Enable (send to senior technicians)
+   - **Create Ticket**: Consider enabling for automatic ticket creation
+   - **Notification**: High-priority notification
+   - **SMS/Push**: Consider for after-hours alerts
 
 5. **Target**: Apply to same devices as the automation policy
 
@@ -323,13 +323,13 @@ Conditions allow NinjaRMM to trigger alerts when script exit codes indicate WARN
    - **Duration**: `Persists for 1 hour` (avoid alerts for transient issues)
 
 4. **Actions**:
-   - **Send Email**: ✅ Enable
+   - **Send Email**: Enable
    - **Create Ticket**: ⬜ Optional
-   - **Notification**: ✅ Send notification
+   - **Notification**: Send notification
 
 5. Click **Save**
 
-**Screenshot Placeholder**: `[Screenshot: Condition configurations]`
+ 
 
 ---
 
@@ -362,7 +362,7 @@ Conditions allow NinjaRMM to trigger alerts when script exit codes indicate WARN
 
 7. Click **Save Widget**
 
-**Screenshot Placeholder**: `[Screenshot: Temperature dashboard widget]`
+ 
 
 ---
 
@@ -406,12 +406,12 @@ Before full deployment:
    - Review any alerts generated
 
 4. **Validation Checklist**:
-   - ✅ `lastTemperatureCheck` updates every 15 minutes
-   - ✅ Temperature values are reasonable
-   - ✅ Status changes appropriately based on thresholds
-   - ✅ Alerts trigger when expected
-   - ✅ Log files are created and rotated properly
-   - ✅ No script timeout errors
+   - `lastTemperatureCheck` updates every 15 minutes
+   - Temperature values are reasonable
+   - Status changes appropriately based on thresholds
+   - Alerts trigger when expected
+   - Log files are created and rotated properly
+   - No script timeout errors
 
 ---
 
@@ -580,11 +580,11 @@ For mission-critical systems where process termination is unacceptable:
 
 After successful deployment:
 
-1. ✅ Configure dashboard widgets for visibility
-2. ✅ Document your specific threshold decisions
-3. ✅ Train technicians on alert response procedures
-4. ✅ Schedule regular review meetings
-5. ✅ Integrate with existing incident management processes
+1. Configure dashboard widgets for visibility
+2. Document your specific threshold decisions
+3. Train technicians on alert response procedures
+4. Schedule regular review meetings
+5. Integrate with existing incident management processes
 
 ---
 

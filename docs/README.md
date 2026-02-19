@@ -2,7 +2,7 @@
 
 Cross-platform temperature monitoring solution for NinjaRMM that collects CPU and GPU temperatures from managed endpoints, writes data to custom fields, triggers tiered alerts, and executes automated remediation actions.
 
-## 🌡️ Features
+## Features
 
 - **Multi-Platform Support**: Windows, macOS, and Linux
 - **Comprehensive Monitoring**: CPU and GPU temperature collection
@@ -13,7 +13,7 @@ Cross-platform temperature monitoring solution for NinjaRMM that collects CPU an
 - **Scheduled Monitoring**: Designed to run every 15 minutes
 - **Detailed Logging**: Local log files with automatic rotation
 
-## 📋 Prerequisites
+## Prerequisites
 
 - **NinjaRMM Agent**: Installed and configured on all target systems
 - **Custom Fields**: Created in NinjaRMM (see [Custom Fields Setup](docs/CUSTOM_FIELDS_SETUP.md))
@@ -23,7 +23,7 @@ Cross-platform temperature monitoring solution for NinjaRMM that collects CPU an
   - **macOS**: powermetrics (built-in) or osx-cpu-temp (optional)
   - **Linux**: lm-sensors (installed automatically)
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Set Up Custom Fields
 
@@ -71,7 +71,7 @@ DEBUG=true sudo ./scripts/linux/get_temperature.sh
 
 Follow the deployment instructions in [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) to configure NinjaRMM automation policies.
 
-## 🎯 Supported Platforms and OS Versions
+## Supported Platforms and OS Versions
 
 ### Windows
 - Windows 10 (1809+)
@@ -100,7 +100,7 @@ Follow the deployment instructions in [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) t
 - Amazon Linux 2 and 2023
 - Fedora 36+
 
-## 📊 Temperature Thresholds (Defaults)
+## Temperature Thresholds (Defaults)
 
 | Component | Warning | Critical |
 |-----------|---------|----------|
@@ -109,7 +109,7 @@ Follow the deployment instructions in [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) t
 
 **To customize thresholds**, edit the configuration variables at the top of each platform script. See [docs/THRESHOLDS.md](docs/THRESHOLDS.md) for detailed tuning guidance.
 
-## 🚨 Alert Levels and Actions
+## Alert Levels and Actions
 
 ### OK (Exit Code: 0)
 - Temperature below warning thresholds
@@ -136,7 +136,7 @@ Follow the deployment instructions in [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) t
 
 See [docs/REMEDIATION.md](docs/REMEDIATION.md) for complete details on remediation actions and process exclusion list.
 
-## 🔐 Security Considerations
+## Security Considerations
 
 - **Verified Dependencies**: LibreHardwareMonitor DLL should be hash-verified before use (placeholder included in installation script)
 - **Path Hardcoding**: `ninjarmm-cli` path is hardcoded to prevent path injection
@@ -144,7 +144,7 @@ See [docs/REMEDIATION.md](docs/REMEDIATION.md) for complete details on remediati
 - **Log Permissions**: Log files are restricted to root/SYSTEM access (chmod 600)
 - **No Secrets**: Scripts do not contain or log sensitive system information
 
-## 🐛 Debug Mode
+## Debug Mode
 
 Enable verbose output for troubleshooting:
 
@@ -165,7 +165,7 @@ Debug mode logs:
 - Process enumeration details
 - NinjaRMM field write operations
 
-## 📁 Log Files
+## Log Files
 
 Platform-specific log file locations:
 
@@ -175,7 +175,7 @@ Platform-specific log file locations:
 
 Logs automatically rotate when they exceed 1MB.
 
-## 🧪 Testing
+## Testing
 
 Each platform includes a test script to validate core functionality:
 
@@ -194,14 +194,14 @@ Invoke-Pester .\scripts\windows\Get-Temperature.Tests.ps1
 ./scripts/linux/get_temperature_test.sh
 ```
 
-## 📖 Documentation
+## Documentation
 
 - **[Custom Fields Setup](docs/CUSTOM_FIELDS_SETUP.md)**: Step-by-step field creation guide
 - **[Threshold Configuration](docs/THRESHOLDS.md)**: How to tune temperature thresholds
 - **[Remediation Guide](docs/REMEDIATION.md)**: Process termination logic and exclusions
 - **[Deployment Guide](docs/DEPLOYMENT.md)**: NinjaRMM policy configuration
 
-## 🔄 Exit Code Reference
+## Exit Code Reference
 
 | Code | Status   | Description |
 |------|----------|-------------|
@@ -212,7 +212,7 @@ Invoke-Pester .\scripts\windows\Get-Temperature.Tests.ps1
 
 Use these exit codes in NinjaRMM condition policies to trigger alerts and notifications.
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! When submitting changes:
 
@@ -222,15 +222,15 @@ Contributions are welcome! When submitting changes:
 4. Add/update tests for new functionality
 5. Ensure security best practices are followed
 
-## 📜 License
+## License
 
 See [LICENSE](LICENSE) file for details.
 
-## 📞 Support
+## Support
 
 For issues, questions, or feature requests, please refer to your NinjaRMM support channels or internal IT documentation.
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 /
@@ -262,7 +262,7 @@ For issues, questions, or feature requests, please refer to your NinjaRMM suppor
 └── README.md
 ```
 
-## 🔮 Future Enhancements
+## Future Enhancements
 
 Potential future features (not yet implemented):
 
@@ -273,7 +273,7 @@ Potential future features (not yet implemented):
 - IPMI/BMC sensor support for server hardware
 - Automatic ticketing integration for CRITICAL events
 
-## ⚙️ Disabling Remediation
+## Disabling Remediation
 
 To disable automatic process termination while keeping alerting:
 

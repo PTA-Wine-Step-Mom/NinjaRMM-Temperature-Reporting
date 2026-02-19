@@ -141,7 +141,7 @@ GPU_CRITICAL_THRESHOLD = 100°C
 - Appropriate for enthusiast-grade hardware designed for high temperatures
 - Useful in environments where brief temperature spikes are expected
 
-**⚠️ Warning**: Only use aggressive thresholds if you're confident in your cooling infrastructure and have verified manufacturer specifications support these temperatures.
+**Warning**: Only use aggressive thresholds if you're confident in your cooling infrastructure and have verified manufacturer specifications support these temperatures.
 
 ### 4. Laptop-Specific Tuning
 
@@ -281,7 +281,7 @@ Before deploying new thresholds to production:
 
 ## Best Practices
 
-✅ **DO:**
+**DO:**
 - Document your threshold decisions and rationale
 - Test threshold changes on non-critical systems first
 - Monitor alert frequency after changes
@@ -289,7 +289,7 @@ Before deploying new thresholds to production:
 - Consider device type (server, workstation, laptop) when setting thresholds
 - Set WARNING threshold 5-10°C below CRITICAL threshold
 
-❌ **DON'T:**
+**DON'T:**
 - Set thresholds above manufacturer maximum temperatures
 - Make dramatic threshold changes without testing
 - Ignore repeated WARNING alerts without investigation
