@@ -1,0 +1,11 @@
+{
+  "cpu": {
+    "warning": 80,
+    "critical": 90
+  },
+  "gpu": {
+    "warning": 85,
+    "critical": 95
+  },
+  "notes": "All temperature values are in degrees Celsius. These thresholds are reference defaults and should be configured as variables within each platform script for easy customization."
+}
